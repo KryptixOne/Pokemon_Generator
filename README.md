@@ -1,5 +1,10 @@
 ## Generating Pokemon
 
+Initial results when training without any added systems to the StyleGAN network for 1200 kimgs
+
+![First Results on Pokemon Generations, FID score of 33](https://github.com/KryptixOne/Pokemon_Generator/blob/main/Results/Dry_run_results.png)
+
+
 ## License
 
 Copyright &copy; 2021, NVIDIA Corporation & affiliates. All rights reserved.
