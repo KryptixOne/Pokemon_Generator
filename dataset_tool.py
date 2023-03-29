@@ -409,7 +409,12 @@ def convert_dataset(
         archive_fname = f'{idx_str[:5]}/img{idx_str}.png'
 
         # Apply crop and resize.
+
         img = transform_image(image['img'])
+        if img.ndim!=3:
+            img = np.repeat(np.expand_dims(img,axis=2),3,axis=2)
+        if img.shape[2]==4:
+            img =img[:,:,0:3]
 
         # Transform may drop images.
         if img is None:
